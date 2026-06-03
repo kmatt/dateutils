@@ -40,7 +40,7 @@
 #include "dexpr-parser.h"
 
 /* grrrrr, bug in bison */
-extern int yyparse();
+extern int yyparse(dexpr_t *cur);
 
 /* turn off tedious warnings */
 #if defined __INTEL_COMPILER

@@ -55,7 +55,7 @@ extern int yyerror(dexpr_t *cur __attribute__((unused)), const char *errmsg);
 extern char *yytext;
 
 /* grrrrr, bug in bison */
-extern int yyparse();
+extern int yyparse(dexpr_t *cur);
 
 #define YYENABLE_NLS		0
 #define YYLTYPE_IS_TRIVIAL	1
